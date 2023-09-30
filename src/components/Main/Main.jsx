@@ -36,6 +36,7 @@ const Main = () => {
               );
           })}
         </ul>
+        {/* a little problem */}
         <div className="rotate-[30deg]"></div>
           <div className="rotate-[150deg]" ></div>
           <div className="rotate-[270deg]"></div>
