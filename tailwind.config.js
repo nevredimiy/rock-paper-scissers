@@ -16,10 +16,6 @@ export default {
       },
     },
     extend: {
-      rotate: {
-        '150': '150deg',
-        '270': '270deg',
-      },
       colors: {
         'bg-gradient-from': 'hsl(214, 47%, 23%)',
         'bg-gradient-to': 'hsl(237, 49%, 15%)',

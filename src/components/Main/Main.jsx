@@ -28,15 +28,20 @@ const Main = () => {
         <ul className="relative -translate-y-10 mx-auto w-96 h-96 md:w-[32rem] md:h-[32rem] flex justify-center items-center">
           {itemElements.map((item, index) => {
             return (
-              <li key={index} ref={el => (refs.current[index] = el)} className={`absolute left-0 origin-[12rem] rotate-${deg[index]} md:origin-[16rem] w-32 h-32 md:w-44 md:h-44`}>
+              <li key={index} ref={el => (refs.current[index] = el)} className={`absolute left-0 origin-[12rem] rotate-[${deg[index]}deg] md:origin-[16rem] w-32 h-32 md:w-44 md:h-44`}>
                 <Link to={`/${item}`} className={`block w-full h-full -rotate-[${deg[index]}deg] cursor-pointer hover:opacity-80 transition-opacity`}>
                   <ItemElem picked={item} />
                 </Link>
               </li>
               );
           })}
-
         </ul>
+        <div className="rotate-[30deg]"></div>
+          <div className="rotate-[150deg]" ></div>
+          <div className="rotate-[270deg]"></div>
+          <div className="-rotate-[30deg]"></div>
+        <div className="-rotate-[150deg]"></div>
+        <div className="-rotate-[270deg]"></div>
         </div>
     </main>
   )
